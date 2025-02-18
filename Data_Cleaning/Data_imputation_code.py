@@ -8,8 +8,10 @@ import pandas as pd
 from sklearn.experimental import enable_iterative_imputer
 from sklearn.impute import IterativeImputer
 from sklearn.ensemble import RandomForestRegressor
+from pathlib import Path
 
-file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_NA.xlsx"
+script_dir = Path(__file__).resolve().parent
+file_path=script_dir/"Dataset_NA.xlsx"
 
 df = pd.read_excel(file_path)
 
@@ -24,6 +26,6 @@ df_numeric_imputed = pd.DataFrame(imputer.fit_transform(df_numeric), columns=num
 
 df_imputed = pd.concat([df[non_numeric_columns], df_numeric_imputed], axis=1)
 
-New_file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_imputed.xlsx"
+New_file_path=script_dir/"Dataset_imputed.xlsx"
 
 df_imputed.to_excel(New_file_path, index=False)

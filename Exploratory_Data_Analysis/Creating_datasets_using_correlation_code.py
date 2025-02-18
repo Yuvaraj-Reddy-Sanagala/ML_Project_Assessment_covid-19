@@ -6,8 +6,10 @@ Created on Mon Feb 17 18:34:20 2025
 """
 
 import pandas as pd
+from pathlib import Path
 
-file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_with_targets_and_encoded.xlsx"
+script_dir = Path(__file__).resolve().parent
+file_path = script_dir.parent / "Data_Cleaning" / "Dataset_with_targets_and_encoded.xlsx"
 
 df=pd.read_excel(file_path)
 
@@ -31,7 +33,7 @@ for i in df_corr_2.keys():
         y.append(i)
 
 
-New_file_path_1="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Exploratory_Data_Analysis/Correlated_cols_for_infection_rate_and_vaccination_rate.txt"
+New_file_path_1=script_dir/"Correlated_cols_for_infection_rate_and_vaccination_rate.txt"
 
 with open(New_file_path_1, "w") as file:
     file.write(str([x,y]))

@@ -6,8 +6,10 @@ Created on Mon Feb 17 17:03:17 2025
 """
 import pandas as pd
 from sklearn.preprocessing import OrdinalEncoder
+from pathlib import Path
 
-file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_imputed.xlsx"
+script_dir = Path(__file__).resolve().parent
+file_path=script_dir/"Dataset_imputed.xlsx"
 
 df=pd.read_excel(file_path)
 
@@ -26,7 +28,7 @@ df['vaccination_rate']=(df['new_vaccinations']/df['population'])*100
 df['infection_rate']=(df['new_cases']/df['population'])*100
 
 
-New_file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_with_targets_and_encoded.xlsx"
+New_file_path=script_dir/"Dataset_with_targets_and_encoded.xlsx"
 
 df_new=df.iloc[:,2:]
 

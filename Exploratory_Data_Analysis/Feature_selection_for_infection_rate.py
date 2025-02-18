@@ -8,11 +8,12 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import RFE
 from sklearn.ensemble import RandomForestRegressor
+from pathlib import Path
 
+script_dir = Path(__file__).resolve().parent
+file_path = script_dir.parent /"Data_Cleaning"/"Dataset_with_targets_and_encoded.xlsx"
 
-file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_with_targets_and_encoded.xlsx"
-
-cols_file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Exploratory_Data_Analysis/Correlated_cols_for_infection_rate_and_vaccination_rate.txt"
+cols_file_path=script_dir/"Correlated_cols_for_infection_rate_and_vaccination_rate.txt"
 
 df=pd.read_excel(file_path)
 
@@ -38,7 +39,7 @@ selected_features.append("infection_rate")
     
 print("Selected features:", selected_features)
 
-New_file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Exploratory_Data_Analysis/Infection_rate_dataset_selected_features.txt"
+New_file_path=script_dir/"Infection_rate_dataset_selected_features.txt"
 
 with open(New_file_path, "w") as file:
     file.write(str(selected_features))

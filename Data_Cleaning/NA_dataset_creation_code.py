@@ -6,15 +6,17 @@ Created on Fri Apr 12 08:02:50 2024
 """
 
 import pandas as pd
+from pathlib import Path
 
-file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_with_required_cols.xlsx"
+script_dir = Path(__file__).resolve().parent
+file_path=script_dir/"Dataset_with_required_cols.xlsx"
 
 df=pd.read_excel(file_path)
 df_NA=df[df['continent']=='North America'].copy()
 
 df_new=df_NA.iloc[:,1:]
 
-New_file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_NA.xlsx"
+New_file_path=script_dir/"Dataset_NA.xlsx"
 
 df_new.to_excel(New_file_path,index=False)
 
