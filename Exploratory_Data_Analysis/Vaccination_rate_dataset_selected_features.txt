@@ -1,0 +1,1 @@
+['date_encoded', 'total_deaths', 'reproduction_rate', 'new_tests', 'tests_per_case', 'people_vaccinated', 'total_boosters', 'stringency_index', 'handwashing_facilities', 'population', 'vaccination_rate']

@@ -10,9 +10,9 @@ import pandas as pd
 file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_with_required_cols.xlsx"
 
 df=pd.read_excel(file_path)
-df_EU=df[df['continent']=='North America'].copy()
+df_NA=df[df['continent']=='North America'].copy()
 
-df_new=df_EU.iloc[:,1:]
+df_new=df_NA.iloc[:,1:]
 
 New_file_path="C:/Users/Admin/Desktop/ML Project/ML_Project_Assessment_covid-19/Data_Cleaning/Dataset_NA.xlsx"
 

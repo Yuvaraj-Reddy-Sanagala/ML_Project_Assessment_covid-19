@@ -1,0 +1,1 @@
+['date_encoded', 'new_cases', 'reproduction_rate', 'new_tests', 'tests_per_case', 'new_vaccinations', 'population_density', 'gdp_per_capita', 'handwashing_facilities', 'vaccination_rate', 'infection_rate']
