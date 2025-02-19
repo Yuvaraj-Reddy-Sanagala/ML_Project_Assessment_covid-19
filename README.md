@@ -125,12 +125,20 @@ These rates were then used as the target variables for the prediction models.
   
 ---
 
-## **Next Steps**
+## Next Steps
 
 1. **Model Enhancement:**
-   - Experiment with alternative **algorithms** (e.g., **XGBoost**, **LightGBM**) for potential performance improvements.
-   - Explore **ensemble methods** to combine strengths of multiple models.
-   - Incorporate **time-series forecasting** techniques (**ARIMA**, **Prophet**, **LSTM**) for predicting future waves.
+   - Experiment with alternative algorithms (e.g., XGBoost, LightGBM) for potential performance improvements.
+   - Explore ensemble methods to combine strengths of multiple models.
+   - Incorporate time-series forecasting techniques (ARIMA, Prophet, LSTM) for predicting future waves.
+
+2. **Data Expansion:**
+   - Extend the analysis to include additional global regions for broader insights.
+   - Integrate more granular data, such as governmental policy changes and mobility patterns.
+
+3. **Validation and Calibration:**
+   - Implement rigorous cross-validation and consider additional metrics like MAPE.
+   - Continuously update and retrain models with new data to maintain relevance.
 
 ---
 
