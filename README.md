@@ -7,6 +7,7 @@ This repository contains the code and documentation for a machine learning proje
 ## Table of Contents
 
 - [**Project Overview**](#project-overview)
+- [**Data Source**](#project-overview)
 - [**Thought Process**](#thought-process)
 - [**Challenges Faced**](#challenges-faced)
 - [**Results Interpretation**](#results-interpretation)
@@ -39,6 +40,15 @@ Using **Random Forest Regression** as the primary modeling approach, the project
   - Evaluating performance with metrics such as **MAE**, **MSE**, **RMSE**, and **R² Score**.
   - Visualizing model outcomes through **feature importance** and **actual vs. predicted rate** graphs.
 
+---
+### **Data Source**
+
+The data used in this project is sourced from the following Kaggle dataset:
+
+- **COVID-19 Daily Updates by Willian Oliveira**: A comprehensive dataset containing daily updated statistics on COVID-19 infections, recoveries, and deaths globally.  
+  [Dataset Link](https://www.kaggle.com/datasets/willianoliveiragibin/covid-19-daily-updates?select=owid_covid_codebook.csv)
+
+  
 ---
 
 ## **Thought Process**
