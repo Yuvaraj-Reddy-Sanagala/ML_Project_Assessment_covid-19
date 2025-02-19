@@ -82,7 +82,7 @@ These rates were then used as the target variables for the prediction models.
 
 3. **Exploratory Data Analysis (EDA):**
    - **EDA** was used to uncover trends and validate assumptions.
-   - **Tableau dashboards** were utilized to visualize infection and vaccination trends using **GeoMaps** and **bar charts**.
+   - **Tableau dashboard** was utilized to visualize infection and vaccination trends using **GeoMaps** and **bar charts**.
    - **Correlation analysis** was applied to identify key features influencing **infection** and **vaccination rates**.  
      - Features with **correlation > 0.005** were selected for infection rate prediction.  
      - Features with **correlation > 0.05** were chosen for vaccination rate prediction.
