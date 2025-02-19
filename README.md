@@ -89,7 +89,7 @@ These rates were then used as the target variables for the prediction models.
    - **Recursive Feature Elimination (RFE)** was used to finalize **10 key features** per target, ensuring only the most relevant predictors were used for modeling.
 
 4. **Model Selection:**
-   - **Random Forest Regression** was chosen for its robustness, interpretability, and ability to handle complex, non-linear relationships.
+   - **Random Forest Regression** is ideal for healthcare applications as it handles complex, non-linear relationships, interprets time series data effectively, and provides clear insights into factors influencing predictions, making it a robust tool for forecasting patient outcomes and treatment effectiveness.
 
 ---
 
