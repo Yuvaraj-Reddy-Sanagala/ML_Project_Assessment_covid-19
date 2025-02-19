@@ -107,6 +107,10 @@ These rates were then used as the target variables for the prediction models.
 - **Model Overfitting:**  
   Fine-tuning **hyperparameters** was essential to ensure the model generalized well across unseen data.
 
+- **Computational Limitations with Data:**  
+  The dataset's large volume and complexity, including various features like **hospitalization rates**, posed challenges due to limited computational resources.
+  This restricted the analysis to key features such as **infection** and **vaccination rates**.
+
 ---
 
 ## **Results Interpretation**
@@ -122,7 +126,31 @@ These rates were then used as the target variables for the prediction models.
 - **Interpretation:**
   - The high **R² score** indicates that 89.19% of the variance in infection rates is captured by the model.
   - Low **MAE** and **RMSE** values confirm minimal prediction errors.
+ 
+- **Visualizations:**
+  - **Actual vs. Predicted Infection Rate:**  
+    ![Actual vs Predicted Infection Rate](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Actual_vs_Predicted_Infection_Rate.jpg)
+  - **Infection Rate Feature Importance:**  
+    ![Infection Rate Feature Importance](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Infection_Rate_Feature_Importances.jpg)
+
+### **Vaccination Rate Prediction Model**
+
+- **Performance Metrics:**
+  - **MAE:** 0.0592  
+  - **MSE:** 0.1506  
+  - **RMSE:** 0.3881  
+  - **R² Score:** 0.9932
+
+- **Interpretation:**
+  - An **R² score** of 0.9932 indicates near-perfect prediction capability.
+  - The low error metrics reinforce the model's robustness in forecasting vaccination trends.
   
+- **Visualizations:**
+  - **Actual vs. Predicted Vaccination Rate:**  
+    ![Actual vs Predicted Vaccination Rate](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Actual_vs_Predicted_Vaccination_Rate.jpg)
+  - **Vaccination Rate Feature Importance:**  
+    ![Vaccination Rate Feature Importance](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Vaccination_Rate_Feature_Importances.jpg)
+    
 ---
 
 ## Next Steps
@@ -146,9 +174,27 @@ These rates were then used as the target variables for the prediction models.
 
 ### **Scalability**
 - **Cloud Integration:**  
-  Deploy models on **cloud platforms** (**AWS SageMaker**, **Google Cloud AI**) to handle larger datasets and real-time prediction requests.
+  Deploy the model on cloud platforms like **AWS SageMaker**, **Google Cloud AI**, or **Microsoft Azure** to handle large datasets and support real-time predictions.
+- **Auto-scaling:**  
+  Utilize cloud-native auto-scaling features (e.g., **AWS Auto Scaling**, **Google Cloud Autoscaler**) to automatically adjust resources based on demand.
 - **API Services:**  
-  Package models into **RESTful APIs** (using **Flask/Django** with **Docker**) for seamless integration into existing systems.
+  Package the model as a **RESTful API** using frameworks like **Flask** or **Django**, and containerize the application with **Docker** for seamless deployment.
+
+### **Performance**
+- **Low-Latency Predictions:**  
+  Optimize the model to ensure low-latency predictions, suitable for real-time healthcare decision-making.
+- **Serverless Computing:**  
+  Consider using **AWS Lambda** or **Google Cloud Functions** to run predictions on-demand without managing servers.
+- **Automated Retraining:**  
+  Set up pipelines using tools like **Apache Airflow** or **Kubeflow** for periodic retraining with fresh data to maintain model accuracy.
+
+### **Real-World Implementation**
+- **Dashboard Integration:**  
+  Integrate model predictions into live dashboards (e.g., **Tableau**, **Power BI**) for real-time monitoring.
+- **User-Friendly Interfaces:**  
+  Develop intuitive interfaces (using frameworks like **React** or **Angular**) for healthcare professionals to interact with the predictions.
+- **CI/CD Pipelines:**  
+  Implement CI/CD using tools like **GitHub Actions** or **AWS CodePipeline** to automate testing, deployment, and updates.
 
 ---
 
