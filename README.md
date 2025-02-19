@@ -7,7 +7,7 @@ This repository contains the code and documentation for a machine learning proje
 ## Table of Contents
 
 - [**Project Overview**](#project-overview)
-- [**Data Source**](#project-overview)
+- [**Data Source**](#data-source)
 - [**Thought Process**](#thought-process)
 - [**Challenges Faced**](#challenges-faced)
 - [**Results Interpretation**](#results-interpretation)
@@ -41,7 +41,7 @@ Using **Random Forest Regression** as the primary modeling approach, the project
   - Visualizing model outcomes through **feature importance** and **actual vs. predicted rate** graphs.
 
 ---
-### **Data Source**
+## **Data Source**
 
 The data used in this project is sourced from the following Kaggle dataset:
 
