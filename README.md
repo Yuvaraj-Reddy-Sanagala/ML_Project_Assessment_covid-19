@@ -49,7 +49,7 @@ The data used in this project is sourced from the following Kaggle dataset:
 
 - **COVID-19 Daily Updates by Willian Oliveira**: A comprehensive dataset containing daily updated statistics on COVID-19 infections, recoveries, and deaths globally.  
   [Dataset Link](https://www.kaggle.com/datasets/willianoliveiragibin/covid-19-daily-updates?select=owid_covid_codebook.csv)  
-- This dataset is used as it contains all the required aspects for the project, including data on **total cases**, **deaths**, **vaccinations**, **population**, and other relevant demographic and economic factors.
+- This dataset is used as it contains all the required aspects for the project, including data on **cases**, **deaths**, **vaccinations**, **population**, and other relevant demographic and economic factors.
 - These features were used to calculate the **infection rate** and **vaccination rate**, which were then predicted using machine learning models.
 
 ---
