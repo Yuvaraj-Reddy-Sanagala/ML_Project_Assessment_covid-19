@@ -63,7 +63,8 @@ To derive the **infection rate** and **vaccination rate**, the following formula
   \text{Infection Rate} = \left( \frac{\text{New Cases}}{\text{Population}} \right) \times 100
   
 - **Vaccination Rate** =  
-  **(New Vaccinations/Population)X100**
+  ```math
+  \text{Vaccination Rate} = \left( \frac{\text{New Vaccinations}}{\text{Population}} \right) \times 100
 
 These rates were then used as the target variables for the prediction models.
 
