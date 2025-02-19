@@ -49,13 +49,31 @@ Utilize global COVID-19 datasets to analyze trends, perform time series forecast
 - **MAE:** 0.0037  
 - **MSE:** 0.00196  
 - **RMSE:** 0.0443  
-- **R² Score:** 0.8919  
+- **R² Score:** 0.8919
+The Random Forest Regression model effectively predicts infection rates with a high degree of accuracy.
+The R² Score of 0.8919 indicates that approximately 89.19% of the variance in infection rates is explained by the model.
+Additionally, the low MAE (0.0037) and RMSE (0.0443) suggest minimal prediction errors, reinforcing the model’s reliability.
 
-### **Vaccination Rate Model Performance:**
+#### **Actual vs Predicted Infection Rate**
+![Actual vs Predicted Infection Rate](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Actual_vs_Predicted_Infection_Rate.jpg)
+
+#### **Infection Rate Feature Importance**
+![Infection Rate Feature Importance](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Infection_Rate_Feature_Importances.jpg)
+
+#### **Vaccination Rate Model Performance:**
 - **MAE:** 0.0592  
 - **MSE:** 0.1506  
 - **RMSE:** 0.3881  
-- **R² Score:** 0.9932  
+- **R² Score:** 0.9932
+The Random Forest Regression model demonstrates exceptional performance in predicting vaccination rates.
+With an R² Score of 0.9932, the model explains 99.32% of the variance, indicating a near-perfect fit.
+The low MAE (0.0592) and RMSE (0.3881) suggest minimal errors in prediction, making it highly reliable for forecasting vaccination trends.
+
+#### **Actual vs Predicted Vaccination Rate**
+![Actual vs Predicted Vaccination Rate](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Actual_vs_Predicted_Vaccination_Rate.jpg)
+
+#### **Vaccination Rate Feature Importance**
+![Vaccination Rate Feature Importance](https://github.com/Yuvaraj-Reddy-Sanagala/ML_Project_Assessment_covid-19/blob/main/Models/Vaccination_Rate_Feature_Importances.jpg)
 
 ---
 
