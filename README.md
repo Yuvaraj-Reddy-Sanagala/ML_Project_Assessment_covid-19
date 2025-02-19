@@ -59,14 +59,10 @@ The data used in this project is sourced from the following Kaggle dataset:
 To derive the **infection rate** and **vaccination rate**, the following formulas were used:
 
 - **Infection Rate** =  
-  \[
-  \left( \frac{\text{New Cases}}{\text{Population}} \right) \times 100
-  \]
+  (New Cases/Population)*100
   
 - **Vaccination Rate** =  
-  \[
-  \left( \frac{\text{New Vaccinations}}{\text{Population}} \right) \times 100
-  \]
+  (New Vaccinations/Population)*100
 
 These rates were then used as the target variables for the prediction models.
 
